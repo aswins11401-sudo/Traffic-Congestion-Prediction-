@@ -220,10 +220,6 @@ __marimo__/
 # Virtual Environment
 .venv/
 
-# Model files
-artifacts/
-*.pkl
-*.joblib
 
 # Python cache
 __pycache__/
