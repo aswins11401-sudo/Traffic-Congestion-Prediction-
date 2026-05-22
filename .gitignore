@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Virtual Environment
+.venv/
+
+# Model files
+artifacts/
+*.pkl
+*.joblib
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit cache
+.streamlit/
+
+# Jupyter Notebook cache
+.ipynb_checkpoints/
