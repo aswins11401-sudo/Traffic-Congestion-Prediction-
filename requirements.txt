@@ -3,7 +3,7 @@ pandas
 numpy
 scikit-learn
 joblib
-sentence-transformers==2.2.2
-torch==2.2.2
-transformers==4.41.2
+sentence-transformers
+torch
+transformers
 pip
