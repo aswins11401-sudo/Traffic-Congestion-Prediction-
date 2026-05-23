@@ -94,6 +94,11 @@ def predict(hour, day_of_week, direction, total_flow, avg_occupancy,
 
 st.title("🚦 Traffic Congestion Predictor")
 st.caption("Predicts average freeway speed using California PeMS D7 sensor data.")
+with st.sidebar:
+    st.title('INFO')
+    st.subheader(':green[Developed by] :red[Aswin]')
+    st.subheader(':red[LinkedIn :]www.linkedin.com/in/aswin-sgl')
+    st.subheader(':red[GitHub :]https://github.com/aswins11401-sudo')
 
 try:
     model, encoders, pt, skew_cols, feature_names = load_artifacts()
