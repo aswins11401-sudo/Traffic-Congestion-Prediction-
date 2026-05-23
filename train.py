@@ -153,7 +153,7 @@ def main(data_path: str, output_dir: str = "artifacts"):
 
     # ── train best model (Random Forest) ────────────────────────────────────
     print("[5/6] Training RandomForestRegressor (this may take a few minutes) …")
-    model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+    model = RandomForestRegressor(n_estimators=50,max_depth=10, random_state=42, n_jobs=-1)
     model.fit(X_train, y_train)
 
     from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
