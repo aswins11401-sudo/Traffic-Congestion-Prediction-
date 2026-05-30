@@ -97,8 +97,11 @@ st.caption("Predicts average freeway speed using California PeMS D7 sensor data.
 with st.sidebar:
     with st.expander('INFO ℹ️'):
         st.subheader('Developed by :red[Aswin]')
-        st.link_button(':blue[LinkedIn ID]','https://www.linkedin.com/in/aswin-sgl/')
-        st.link_button(':red[GitHub]','https://github.com/aswins11401-sudo')
+        col1,col2 = st.columns(2)
+        with col1:
+            st.link_button(':blue[LinkedIn ID]','https://www.linkedin.com/in/aswin-sgl/')
+        with col2:
+            st.link_button(':red[GitHub]','https://github.com/aswins11401-sudo')
 
 try:
     model, encoders, pt, skew_cols, feature_names = load_artifacts()
